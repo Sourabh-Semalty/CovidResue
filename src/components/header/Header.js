@@ -1,24 +1,18 @@
 import React from 'react'
-import LinkItem from './LinkItem'
-
+import LinkItems from './LinkItems'
+import './Header.css'
+const logo = {
+  img: 'https://covidrescue.co.in/logo/trackCovid.svg',
+  alt: 'logo',
+}
 const Header = () => {
-  const links = [
-    {href:"#", text: 'Home', icon: "abc"},
-    {href:"#", text: 'Home', icon: "abc"},
-    {href:"#", text: 'Home', icon: "abc"},
-    {href:"#", text: 'Home', icon: "abc"},
-    {href:"#", text: 'Home', icon: "abc"},
-    {href:"#", text: 'Home', icon: "abc"}
-  ]
   return (
-    <nav>
-      <h1>Title</h1>
-      <ul>
-        {
-          links.map(link => <LinkItem {...link} />)
-        }
-      </ul>
-    </nav>
+    <div className='header'>
+      <div className='header-logo'>
+        <img src={logo.img} alt={logo.alt} />
+      </div>
+      <LinkItems />
+    </div>
   )
 }
 

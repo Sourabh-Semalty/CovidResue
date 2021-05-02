@@ -1,3 +1,3 @@
-function trimAndCaps(s) {
-  s.trim().toUppperCase()
-}
+// function trimAndCaps(s) {
+//   s.trim().toUppperCase()
+// }
